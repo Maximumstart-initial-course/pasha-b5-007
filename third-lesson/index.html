@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<form class="form" action="http://maximumstart.herokuapp.com/register" method="POST"> 
+	<form class="form" action="http://maximumstart.herokuapp.com/register" method="POST" enctype="multipart/form-data"> 
 	<fieldset>
 	<h1>Регистрация</h1>
 	<p>*Все поля обязательны к заполнению</p>	
@@ -18,15 +18,15 @@
     			<label for='surname'>Фамилия</label>
     			<input required type='text' id='surname' name="surname">
     		</p>
-  			<P>
+  			<p>
     			<label for='phone'>Телефон</label>
     			<input required type='text' placeholder="+38(0XX)XXX-XXXX"	id='phone' name="phone">
     		</p>
   			<P>
     			<label for='color'>Любимый цвет</label>
-    			<input required type='color' id='color' name="color">
+    			<input type='color' id='color' name="color">
     		</p>
-  			<P>
+  			<p>
     			<label for='date'>Сегодняшнее число</label>
     			<input required type='date' id='date' name="date">
     		</p>
@@ -51,8 +51,9 @@
     			<textarea required name="message" id="message" cols="30" rows="10"></textarea>
     		</p>
     		<p>
-    			<input required type="submit" value="Отправить">
+    			<input type="submit" value="Отправить">
     		</p>
 		</fieldset>
+	</form>
 </body>
 </html>
