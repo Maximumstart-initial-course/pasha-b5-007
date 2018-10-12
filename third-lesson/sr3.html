@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>sr3_1</title>
+</head>
+<body>
+	<form class="form" action="http://maximumstart-echo.herokuapp.com/" method="POST">
+	<table cellspacing="0" border="1">
+		<thead>
+			<th> align="center" colspan="2"><b>Регистрация нового пользователя</b></th> 
+		</thead>
+		<tr>
+			<td><label for="pochta">Email:</label></td>
+			<td><input required type="email" placeholder="test@example.com" id="pochta" name="email"></td>
+		</tr>
+		<tr>
+			<td><label for="familiya">Фамилия:</label></td>
+			<td><input required type="text" id="familiya" name="surname"></td>
+		</tr>
+		<tr>
+			<td><label for="imya">Имя:</label></td>
+			<td><input required type="text" id="imya" name="name"></td>
+		</tr>
+		<tr>
+			<td><label for="otchestvo">Отчество:</label></td>
+			<td><input required type="text" id="otchestvo" name="middlename"></td>
+		</tr>
+		<tr>
+			<td>Пол:</td>
+			<td><input required type="radio" id="he-radio" name="gender" value="male">
+				<label for="he-radio">Мужской</label>
+				
+				<input required type="radio" id="she-radio" name="gender" value="female">
+				<label for="she-radio">Женский</label></td>
+		</tr>
+		<tr>
+			<td><label for="dr">Дата рождения:</label></td>
+			<td><input required type="date" id="dr" name="birthday"></td>
+		</tr>
+		<tr>
+			<td><label for="log">Логин:</label></td>
+			<td><input required type="text" id="log" name="login"></td>
+		</tr>
+		<tr>
+			<td><label for="parol">Пароль:</label></td>
+			<td><input required type="password" id="parol" name="password"></td>
+		</tr>
+		<tr>
+			<td><label for="parol1">Повторите пароль:</label></td>
+			<td><input required type="password" id="parol1" name="passwordagain"></td>
+		</tr>
+	</table>
+	<input type="submit" value="Регистрация">
+	</form>
+</body>
+</html>
