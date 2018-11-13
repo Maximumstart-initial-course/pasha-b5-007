@@ -48,8 +48,8 @@ body {
 	border: 1px dashed;
 }
 
-a {
-	color: #000;
+.article a {
+    color: #000;
 }
 
 .article__more:hover {
